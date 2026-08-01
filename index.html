@@ -3,17 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My APK</title>
+
+  <title>My APK - Download</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: white;
+      border-radius: 20px;
+      padding: 30px 22px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+
+    .app-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 22px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      background: #1877f2;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .download-btn:active {
+      transform: scale(0.98);
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>My APK</h1>
+  <div class="card">
 
-<p>मेरा Android App डाउनलोड करें।</p>
+    <!-- App का नाम -->
+    <h1>My APK</h1>
 
-<a href="https://drive.google.com/file/d/1jZ6HQvbRls9fg2fE-C0cN9_XbTByBWB4/view?usp=drivesdk">
-  <button>APK Download करें</button>
-</a>
+    <p class="description">
+      Android के लिए हमारा ऐप डाउनलोड करें।
+      नीचे दिए गए बटन पर क्लिक करके APK डाउनलोड करें।
+    </p>
+
+    <div class="info">
+      📱 Android App<br>
+      📦 APK Version: 1.0
+    </div>
+
+    <!-- Download Button -->
+    <a
+      class="download-btn"
+      href="https://drive.google.com/file/d/1jZ6HQvbRls9fg2fE-C0cN9_XbTByBWB4/view?usp=drivesdk"
+      target="_blank">
+      ⬇️ APK Download करें
+    </a>
+
+    <p class="note">
+      डाउनलोड करने के बाद Android में APK install करने से पहले
+      अपने फोन की सुरक्षा जाँच और ऐप की अनुमति जरूर देखें।
+    </p>
+
+  </div>
 
 </body>
 </html>
